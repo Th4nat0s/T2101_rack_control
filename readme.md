@@ -3,6 +3,9 @@ Temperature control for rack
 
 Read temperature and set the FAN accordly
 -----------------------------------------
+Read temperature via DS18B20  
+Set the speed of the Fan accordly.  
+Up to 16W / 12v  
 
 ### Attiny84
 SPI Through BusPirate 
