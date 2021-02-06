@@ -16,4 +16,4 @@ Tips
 `pio run -t upload -e uno` upload only for arduino uno  
 `pio platform update --dry-run` check for updates  
 
-![plot](./hardware/T2101_rack_control.jpg
+![plot](./hardware/T2101_rack_control.jpg)
