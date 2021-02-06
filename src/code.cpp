@@ -99,25 +99,25 @@ void loop(void)
 
 
   // Setup ulow, low, medium, high
-   if (tempC < 24){
+   if (tempC < 34){
      analogWrite(MOTOR, 48);
     #ifdef __PLATFORMIO_BUILD_DEBUG__
     Serial.println("Motor: 48");
     #endif
   }
-  else if (tempC > 25 and tempC < 29){
+  else if (tempC > 35 and tempC < 39){
     analogWrite(MOTOR, 64);
     #ifdef __PLATFORMIO_BUILD_DEBUG__
     Serial.println("Motor: 64");
     #endif
   }
-  else if (tempC > 30 and tempC <34){
+  else if (tempC > 40 and tempC <44){
     analogWrite(MOTOR, 128);
     #ifdef __PLATFORMIO_BUILD_DEBUG__
     Serial.println("Motor: 128");
     #endif
   }
-  else if (tempC > 35){
+  else if (tempC > 45){
     analogWrite(MOTOR, 255);
     #ifdef __PLATFORMIO_BUILD_DEBUG__
     Serial.println("Motor: 255");
