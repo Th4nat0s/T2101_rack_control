@@ -11465,8 +11465,8 @@ Source: http://www.infineon.com/upload/Document/cmc_upload/documents/012/3615/SP
 <part name="U1" library="Fidget Spinner Example" library_urn="urn:adsk.eagle:library:9489508" deviceset="ATTINY84" device="" package3d_urn="urn:adsk.eagle:package:9489532/2" value="ATTINY84"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="VCC5"/>
 <part name="SUPPLY1" library="Fidget Spinner Example" library_urn="urn:adsk.eagle:library:9489508" deviceset="GND" device=""/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
-<part name="D1" library="LED" library_urn="urn:adsk.eagle:library:12213040" deviceset="HSMR-C190" device="" package3d_urn="urn:adsk.eagle:package:10893503/2"/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="68"/>
+<part name="D1" library="LED" library_urn="urn:adsk.eagle:library:12213040" deviceset="HSMR-C190" device="" package3d_urn="urn:adsk.eagle:package:10893503/2" value="BLUE"/>
 <part name="SUPPLY2" library="Fidget Spinner Example" library_urn="urn:adsk.eagle:library:9489508" deviceset="GND" device=""/>
 <part name="Q1" library="transistor-fet" library_urn="urn:adsk.eagle:library:396" deviceset="SPD30P06P" device="TO252" package3d_urn="urn:adsk.eagle:package:28537/2" value="IRFR220"/>
 <part name="SUPPLY3" library="Fidget Spinner Example" library_urn="urn:adsk.eagle:library:9489508" deviceset="GND" device=""/>
@@ -11699,7 +11699,7 @@ Source: http://www.infineon.com/upload/Document/cmc_upload/documents/012/3615/SP
 <junction x="104.14" y="43.18"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="DPOS" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="D1" gate="G$1" pin="A"/>
@@ -11718,7 +11718,7 @@ Source: http://www.infineon.com/upload/Document/cmc_upload/documents/012/3615/SP
 <wire x1="78.74" y1="53.34" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="58.42" x2="83.82" y2="58.42" width="0.1524" layer="91"/>
 <junction x="78.74" y="53.34"/>
-<label x="83.82" y="58.42" size="1.778" layer="95" xref="yes"/>
+<label x="83.82" y="58.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J6" gate="G$1" pin="4"/>
@@ -11735,19 +11735,19 @@ Source: http://www.infineon.com/upload/Document/cmc_upload/documents/012/3615/SP
 <wire x1="76.2" y1="50.8" x2="71.12" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="50.8" x2="83.82" y2="50.8" width="0.1524" layer="91"/>
 <junction x="76.2" y="50.8"/>
-<label x="83.82" y="50.8" size="1.778" layer="95" xref="yes"/>
+<label x="83.82" y="50.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J6" gate="G$1" pin="3"/>
 <wire x1="17.78" y1="-2.54" x2="25.4" y2="-2.54" width="0.1524" layer="91"/>
-<label x="25.4" y="-2.54" size="1.778" layer="95" xref="yes"/>
+<label x="25.4" y="-2.54" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SCL" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="(PCINT4/T1/SCL/USCK/ADC4)PA4"/>
 <wire x1="71.12" y1="48.26" x2="83.82" y2="48.26" width="0.1524" layer="91"/>
-<label x="83.82" y="48.26" size="1.778" layer="95" xref="yes"/>
+<label x="83.82" y="48.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J6" gate="G$1" pin="2"/>
@@ -11759,7 +11759,7 @@ Source: http://www.infineon.com/upload/Document/cmc_upload/documents/012/3615/SP
 <segment>
 <pinref part="U1" gate="G$1" pin="(PCINT11/~RESET/DW)PB3"/>
 <wire x1="71.12" y1="68.58" x2="83.82" y2="68.58" width="0.1524" layer="91"/>
-<label x="83.82" y="68.58" size="1.778" layer="95" xref="yes"/>
+<label x="83.82" y="68.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J6" gate="G$1" pin="1"/>
