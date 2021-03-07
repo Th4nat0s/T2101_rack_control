@@ -42,6 +42,21 @@ void setup(void)
   // Start up the library
   // Configure les ports et le sensor
   pinMode(LED, OUTPUT);
+
+  // Blink on start
+  digitalWrite(LED,HIGH);
+  delay(250);
+  digitalWrite(LED,LOW);
+  delay(250);
+  digitalWrite(LED,HIGH);
+  delay(250);
+  digitalWrite(LED,LOW);
+  delay(250);
+  digitalWrite(LED,HIGH);
+  delay(250);
+  digitalWrite(LED,LOW);
+  delay(250);
+
   // pinMode(ONE_WIRE_BUS, OUTPUT);
   sensors.begin();
 
