@@ -7,9 +7,15 @@ Read temperature via DS18B20
 Set the speed of the Fan accordly.  
 Up to 16W / 12v  
 
-### Attiny84
+### Attiny84  
 SPI Through BusPirate 
-arduino framework 
+arduino framework  
+
+Warning: Flash on Board  
+Buspirate set on 5v  
+Additionnal power to 5v  
+fuse flashed before mounting  
+
 
 Tips
 ----

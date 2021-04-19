@@ -8,6 +8,7 @@
 
 // Debug serial sur PB2 - 115200bps  (D2)
 // Data wire is plugged into port 2 on the Arduino
+
 #define ONE_WIRE_BUS 7  // Attention pinout étrange
 #define LED 10
 #define MOTOR 4
@@ -42,8 +43,7 @@ void setup(void)
   // Start up the library
   // Configure les ports et le sensor
   pinMode(LED, OUTPUT);
-
-  // Blink on start
+  // Blink on start 3x
   digitalWrite(LED,HIGH);
   delay(250);
   digitalWrite(LED,LOW);
@@ -57,17 +57,21 @@ void setup(void)
   digitalWrite(LED,LOW);
   delay(250);
 
-  // pinMode(ONE_WIRE_BUS, OUTPUT);
+
+  //pinMode(ONE_WIRE_BUS, OUTPUT);
+  //digitalWrite(ONE_WIRE_BUS, HIGH); // Activate Pull Up
   sensors.begin();
 
   adc_disable();                       // ADC uses ~320uA so disable it until we need it.
 
   // Setup PWM Timer1
   //  Default 250Hz
-  TCCR1B = TCCR1B & (B11111000 | B00000001); //this changes the PWM frequency to 16kHz
+  // TCCR1B = TCCR1B & (B11111000 | B00000001); //this changes the PWM frequency to 16kHz
 
   // Launch motor
   // Doit tourner a plein régime pour lancer les moteurs.
+
+  digitalWrite(LED,HIGH);
   pinMode(MOTOR, OUTPUT);
   analogWrite(MOTOR, 255);
   delay(2000);
@@ -106,9 +110,9 @@ void loop(void)
   {
     #ifdef __PLATFORMIO_BUILD_DEBUG__
     Serial.println("Error: Could not read temperature data");
+    #endif
     // si on perd le capteur, ventilo a fond.
     tempC = 100;
-    #endif
   }
 
 
